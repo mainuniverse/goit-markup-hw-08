@@ -1,0 +1,47 @@
+.clients__container {
+  font-family: Roboto;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.167;
+  letter-spacing: 0.03em;
+  text-align: center;
+  margin-bottom: 50px;
+}
+.clients {
+  @extend %displayFlex;
+  justify-content: center;
+  margin-bottom: 94px;
+}
+
+.clients__list {
+  @extend %displayFlex;
+  justify-content: center;
+  width: 170px;
+  height: 92px;
+  border-radius: 4px;
+  margin-right: 30px;
+  @include bordered($socialLinksColor);
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:last-child {
+    margin-right: 0;
+  }
+  &:hover,
+  &:focus {
+    border-color: getColor('accent-color');
+    fill: getColor('accent-color');
+  }
+}
+
+.clients__img {
+  fill: var(--social-links-color);
+  list-style: none;
+  text-decoration: none;
+  @extend %displayFlex;
+  padding: 16px 32px;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    border-color: var(--accent-color);
+    fill: var(--accent-color);
+  }
+}

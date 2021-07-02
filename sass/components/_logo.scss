@@ -1,0 +1,17 @@
+.logo {
+  color: getColor('accent-color');
+  font-family: Raleway;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.383;
+  text-decoration: none;
+  display: inline-block;
+  margin-right: 93px;
+}
+
+.header__logo {
+  color: getColor('blackColor');
+  font-family: Raleway;
+  font-weight: 700;
+  line-height: 1.174;
+}

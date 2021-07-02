@@ -1,0 +1,63 @@
+body {
+  color: getColor('primaryTextColor');
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  text-decoration: none;
+  letter-spacing: 0.03em;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  width: 100%;
+  fill: getColor('secondaryTextColor');
+  align-items: center;
+}
+img {
+  display: block;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  padding: 0;
+  margin: 0;
+}
+
+.list {
+  list-style: none;
+  text-decoration: none;
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  width: 1200px;
+  align-items: center;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.section {
+  padding-top: 94px;
+  padding-left: 15px;
+  padding-right: 15px;
+  max-width: 1600px;
+  display: inline-block;
+  align-items: center;
+  width: 100%;
+}
+.visually-hidden:not(:focus):not(:active) {
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}

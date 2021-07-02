@@ -1,0 +1,13 @@
+$gridItemMargin: 30px;
+//margin: $gridItemMargin * 2; #{$gridItemMargin}
+
+@mixin bordered($color) {
+  border: 1px solid $color;
+}
+//@include bordered(tomato);
+
+%displayFlex {
+  display: flex;
+  align-items: center;
+}
+//@extend %displayFlex
