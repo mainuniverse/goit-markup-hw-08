@@ -2,30 +2,54 @@
   color: getColor('whiteColor');
   background-color: getColor('accent-color');
   background-image: linear-gradient(to left, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-    url('../images/overlay.jpg');
+    url('../images/overlay/overlay_mobile.jpg');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   text-decoration: none;
   margin: 0;
   border-radius: 4px;
-  padding: 200px 15px;
-  max-width: 1600px;
+  padding: 118px 15px;
   width: 100%;
   display: inline-block;
   align-items: center;
+  margin-bottom: 60px;
+  @media screen and (min-width: 768px) {
+    background-image: linear-gradient(to left, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url('../images/overlay/overlay_tablet.jpg');
+  }
+
+  @media screen and (min-width: 1200px) {
+    background-image: linear-gradient(to left, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url('../images/overlay/overlay.jpg');
+    max-width: 1600px;
+    padding: 200px 15px;
+    margin-bottom: 94px;
+  }
 }
 
 .slogan {
-  font-size: 44px;
-  line-height: 1.364;
+  font-size: 26px;
+  line-height: 1.615;
   text-align: center;
   text-transform: uppercase;
   margin-bottom: 30px;
+
+  @media screen and (min-width: 1200px) {
+    font-size: 44px;
+    line-height: 1.364;
+  }
 }
 .hero__container {
-  display: flex;
-  flex-basis: calc(100% / 4 - 30px);
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-basis: calc(100% / 2 - 30px);
+  }
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    flex-basis: calc(100% / 4 - 30px);
+  }
 }
 .hero__img {
   padding: 25px 100px;
@@ -50,9 +74,16 @@
 }
 .hero__discr {
   margin-right: 30px;
-  text-align: left;
-  &:last-child {
-    margin-right: 0;
+  margin-bottom: 30px;
+
+  @media screen and (min-width: 768px) {
+    text-align: left;
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  @media screen and (min-width: 1200px) {
   }
 }
 
@@ -64,9 +95,11 @@
   text-transform: uppercase;
   margin-bottom: 10px;
 }
+
 .hero__details {
   font-size: 14px;
   line-height: 1.5;
   letter-spacing: 0.03em;
   color: getColor('secondaryTextColor');
+  text-align: left;
 }

@@ -1,3 +1,9 @@
+.about__container {
+  @media (max-width: 1199px) {
+    display: none;
+  }
+}
+
 .about {
   font-size: 36px;
   font-weight: 700;

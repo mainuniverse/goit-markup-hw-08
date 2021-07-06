@@ -11,9 +11,12 @@ body {
   width: 100%;
   fill: getColor('secondaryTextColor');
   align-items: center;
+  overflow-x: hidden;
 }
 img {
   display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 h1,
@@ -35,21 +38,37 @@ p {
 }
 
 .container {
-  width: 1200px;
-  align-items: center;
-  margin: 0 auto;
-  padding-left: 15px;
-  padding-right: 15px;
-}
-.section {
-  padding-top: 94px;
-  padding-left: 15px;
-  padding-right: 15px;
-  max-width: 1600px;
-  display: inline-block;
-  align-items: center;
+  min-width: 320px;
   width: 100%;
+  margin-right: 0;
+  margin-left: 0;
+  padding-left: 15px;
+  padding-right: 15px;
+  align-items: center;
+  // @media screen and (min-width: 480px) {
+  //   width: 450px;
+  // }
+
+  @media screen and (min-width: 768px) {
+    width: 768px;
+    background-color: blue;
+  }
+
+  @media screen and (min-width: 1200px) and (max-width: 1600px) {
+    min-width: 1200px;
+
+    background-color: red;
+  }
 }
+// .section {
+//   padding-top: 94px;
+//   padding-left: 15px;
+//   padding-right: 15px;
+//   max-width: 1600px;
+//   display: inline-block;
+//   align-items: center;
+//   width: 100%;
+// }
 .visually-hidden:not(:focus):not(:active) {
   width: 1px;
   height: 1px;

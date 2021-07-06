@@ -1,16 +1,31 @@
 .header__contacts {
-  @extend %displayFlex;
-  padding-top: 32px;
-  padding-bottom: 32px;
-  margin-left: auto;
+  display: none;
+  @media screen and (min-width: 768px) {
+    margin-left: auto;
+  }
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    align-items: center;
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
 }
 .header__details {
-  @extend %displayFlex;
   margin-right: 50px;
   margin-left: auto;
   margin-bottom: 0;
   padding: 0;
   transition: color 50ms cubic-bezier(0.4, 0, 0.2, 1), fill 50ms cubic-bezier(0.4, 0, 0.2, 1);
+  @media screen and (min-width: 768px) {
+    max-width: 768px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    align-items: center;
+  }
+
   &:hover,
   &:active {
     fill: getColor('accent-color');
