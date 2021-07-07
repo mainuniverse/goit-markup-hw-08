@@ -1,7 +1,11 @@
 .header__contacts {
   display: none;
-  @media screen and (min-width: 768px) {
-    margin-left: auto;
+  border: 1px solid orange;
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 0;
   }
 
   @media screen and (min-width: 1200px) {
@@ -9,45 +13,67 @@
     align-items: center;
     padding-top: 32px;
     padding-bottom: 32px;
+    margin-left: auto;
   }
 }
 .header__details {
-  margin-right: 50px;
-  margin-left: auto;
+  position: relative;
+  color: getColor('primaryTextColor');
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 1.166;
+  text-decoration: none;
+  letter-spacing: 0.02em;
   margin-bottom: 0;
   padding: 0;
   transition: color 50ms cubic-bezier(0.4, 0, 0.2, 1), fill 50ms cubic-bezier(0.4, 0, 0.2, 1);
-  @media screen and (min-width: 768px) {
-    max-width: 768px;
-  }
-
-  @media screen and (min-width: 1200px) {
-    display: flex;
-    align-items: center;
-  }
 
   &:hover,
   &:active {
     fill: getColor('accent-color');
     color: getColor('accent-color');
   }
+  .header__list & {
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
+  @media screen and (min-width: 768px) {
+    font-size: 14px;
+    line-height: 1.143;
+    max-width: 768px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 5px 0;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-right: 50px;
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+  }
+
   &:last-child {
     margin-right: 0;
   }
 }
-.link:hover,
-.link:focus,
-.link:active {
-  color: getColor('accent-color');
-}
+// .header__details:hover,
+// .header__details:focus,
+// .header__details:active {
+//   color: getColor('accent-color');
+// }
 
 .header__icons {
   display: inline-block;
   align-items: center;
   margin-right: 10px;
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: top;
   background-size: cover;
   stroke-width: 0;
   stroke: currentColor;
+  @media screen and (min-width: 1200px) {
+    background-position: center;
+  }
 }

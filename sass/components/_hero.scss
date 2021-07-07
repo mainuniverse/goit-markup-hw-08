@@ -7,13 +7,17 @@
   background-position: center;
   background-size: cover;
   text-decoration: none;
-  margin: 0;
+  margin: auto;
   border-radius: 4px;
   padding: 118px 15px;
-  width: 100%;
+  // width: 100%;
   display: inline-block;
   align-items: center;
   margin-bottom: 60px;
+  @media screen and (max-width: 767px) {
+    max-width: 480px;
+  }
+
   @media screen and (min-width: 768px) {
     background-image: linear-gradient(to left, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
       url('../images/overlay/overlay_tablet.jpg');
@@ -40,15 +44,40 @@
     line-height: 1.364;
   }
 }
+.hero__section {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  @media screen and (min-width: 1200px) {
+    padding-top: 94px;
+  }
+}
 .hero__container {
+  background-color: red;
+  display: block;
+  text-align: center;
+  align-items: center;
   @media screen and (min-width: 768px) {
     display: flex;
-    flex-basis: calc(100% / 2 - 30px);
+    flex-wrap: wrap;
+    margin-left: -30px;
   }
-
   @media screen and (min-width: 1200px) {
     display: flex;
-    flex-basis: calc(100% / 4 - 30px);
+  }
+  & .hero__img {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+}
+
+.hero__box {
+  margin-bottom: 30px;
+  background-color: yellow;
+  @media screen and (min-width: 768px) {
+    text-align: left;
+  }
+  &:last-child {
+    margin-right: 0;
   }
 }
 .hero__img {
@@ -57,12 +86,26 @@
   background-color: getColor('otherBackgroundColor');
   border-radius: 4px;
   border-color: rgba(245, 244, 250, 1);
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
-  &:hover,
-  &:focus {
-    border-color: getColor('accent-color');
-    fill: getColor('accent-color');
-  }
+  // margin-left: -30px;
+  // margin-bottom: -30px;
+  // @media screen and (min-width: 768px) {
+  //   flex-basis: calc((100% - 60px) / 2);
+  //   //  calc(100% / 2 - 30px)
+  // }
+  // @media screen and (min-width: 1200px) {
+  //   display: flex;
+  //   flex-basis: calc(100% / 4 - 30px);
+}
+
+&:hover,
+&:focus {
+  border-color: getColor('accent-color');
+  fill: getColor('accent-color');
 }
 .hero__icon {
   fill: getColor('primaryTextColor');
@@ -72,28 +115,19 @@
     fill: getColor('accent-color');
   }
 }
-.hero__discr {
-  margin-right: 30px;
-  margin-bottom: 30px;
-
-  @media screen and (min-width: 768px) {
-    text-align: left;
-    &:last-child {
-      margin-right: 0;
-    }
-  }
-
-  @media screen and (min-width: 1200px) {
-  }
-}
-
 .hero__items {
   font-size: 14px;
   font-style: normal;
   font-weight: 700;
   line-height: 1.142;
   text-transform: uppercase;
-  margin-bottom: 10px;
+  width: 100%;
+  margin-bottom: 30px;
+  @media screen and (min-width: 768px) {
+    margin-bottom: 10px;
+    flex-basis: calc((100% - 60px) / 2);
+    margin-left: 30px;
+  }
 }
 
 .hero__details {

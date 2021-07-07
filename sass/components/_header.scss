@@ -2,30 +2,23 @@
   background-color: getColor('whiteColor');
   text-decoration: none;
   @include bordered($borderColor1);
-  @extend %displayFlex;
-  justify-content: space-between;
-  width: 100%;
-
-  padding-right: 10px;
   align-items: center;
-  justify-content: space-between;
+  @extend %displayFlex;
 }
 
 .header__nav {
   @extend %displayFlex;
   justify-content: space-between;
-
-  // @media screen and (min-width: 768px) {
-  //   max-width: 768px;
-  // }
-
-  @media screen and (min-width: 1200px) {
-    max-width: 1200px;
-    align-items: center;
+  background-color: chocolate;
+  height: 60px;
+  @media screen and (min-width: 768px) {
+    height: 80px;
   }
 }
+
 .header__list {
   display: none;
+  border: 1px solid green;
 
   @media screen and (min-width: 768px) {
     display: flex;
@@ -43,29 +36,24 @@
   }
 }
 .menu__button {
-  position: relative;
   display: inline-flex;
-  align-items: center;
   padding: 0;
-  margin: 0;
   border: none;
   cursor: pointer;
   outline: none;
-  & .menu__cross {
-    display: none;
-  }
-  &.is-open .menu__cross {
-    display: block;
-  }
-  &.is-open .menu__icon {
-    display: none;
-  }
+  margin-left: auto;
+
   @media (min-width: 768px) {
     display: none;
   }
+  &:hover,
+  &:active {
+    fill: getColor('accent-color');
+    color: getColor('accent-color');
+    cursor: pointer;
+  }
 }
-
-.link {
+.header__link {
   position: relative;
   color: getColor('primaryTextColor');
   font-size: 14px;
@@ -80,9 +68,30 @@
     padding-top: 32px;
     padding-bottom: 32px;
   }
+  &:hover,
+  &:focus,
+  &:active {
+    color: getColor('accent-color');
+  }
 }
+// .link {
+//   position: relative;
+//   color: getColor('primaryTextColor');
+//   font-size: 14px;
+//   font-weight: 500;
+//   line-height: 1.143;
+//   text-decoration: none;
+//   letter-spacing: 0.02em;
+//   margin: 0;
+//   padding: 0;
+//   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+//   .header__list & {
+//     padding-top: 32px;
+//     padding-bottom: 32px;
+//   }
+// }
 
-.header__link {
+.header__icons--item {
   color: getColor('secondaryTextColor');
 }
 
@@ -97,6 +106,9 @@
     height: 4px;
     background-color: getColor('accent-color');
     border-radius: 2px;
-    bottom: -3px;
+    bottom: 5px;
+    @media screen and (min-width: 1200px) {
+      bottom: -3px;
+    }
   }
 }
