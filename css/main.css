@@ -696,6 +696,13 @@ p {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .hero__items {
+    text-align: left;
+    margin-left: 0;
+  }
+}
+
 .hero__details {
   font-size: 14px;
   line-height: 1.5;
