@@ -1,8 +1,7 @@
 .team__container {
   background-color: getColor('otherBackgroundColor');
   text-decoration: none;
-  margin-top: 94px;
-  padding-bottom: 94px;
+  padding-bottom: 60px;
   display: inline-block;
   align-items: center;
   list-style: none;
@@ -12,6 +11,8 @@
 
   @media screen and (min-width: 1200px) {
     width: 1200px;
+    //   margin-top: 94px;
+    padding-bottom: 94px;
   }
 }
 
@@ -62,12 +63,10 @@
   border-bottom-left-radius: 3px;
   border-bottom-right-radius: 3px;
   width: 450px;
-  padding-bottom: 30px;
   margin-top: 50px;
   @media screen and (min-width: 768px) and (max-width: 1199px) {
     width: 354px;
     margin-right: 30px;
-    padding-bottom: 30px;
     &:nth-child(2n) {
       margin-right: 0;
     }

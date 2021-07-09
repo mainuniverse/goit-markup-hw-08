@@ -9,7 +9,7 @@
   text-decoration: none;
   margin: auto;
   border-radius: 4px;
-  padding: 118px 15px;
+  padding: 118px 0;
   // width: 100%;
   display: inline-block;
   align-items: center;
@@ -26,7 +26,7 @@
     background-image: linear-gradient(to left, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
       url('../images/overlay/overlay.jpg');
     max-width: 1600px;
-    padding: 200px 15px;
+    padding: 200px 0;
   }
 }
 
@@ -50,7 +50,6 @@
   }
 }
 .hero__container {
-  background-color: red;
   display: block;
   text-align: center;
   @media screen and (min-width: 768px) {
@@ -79,17 +78,6 @@
   }
 }
 
-// .hero__box {
-//   margin-bottom: 30px;
-//   @media screen and (min-width: 768px) {
-//     text-align: left;
-//   }
-//   @media screen and (min-width: 1200px) {
-//     &:last-child {
-//       margin-right: 0;
-//     }
-//   }
-// }
 .hero__img {
   padding: 25px 100px;
   margin-bottom: 30px;

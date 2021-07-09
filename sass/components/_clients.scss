@@ -1,40 +1,35 @@
 .clients__container {
+  margin-bottom: 60px;
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 79px;
+  }
+}
+.clients__text {
   font-family: Roboto;
   font-size: 28px;
   font-weight: 700;
   line-height: 1.178;
   letter-spacing: 0.03em;
   text-align: center;
-  margin-bottom: 50px;
-
-  // @media screen and (min-width: 768px) {
-  // } max-width: 480px;
+  margin-top: 60px;
+  margin-bottom: 30px;
 
   @media screen and (min-width: 1200px) {
     font-size: 36px;
     font-weight: 700;
     line-height: 1.167;
+    margin-top: 94px;
+    margin-bottom: 50px;
   }
 }
 .clients {
   display: flex;
   flex-wrap: wrap;
   margin-left: -30px;
-  margin-bottom: -30px;
-  // align-items: center;
-  // justify-content: center;
-  // flex-basis: calc((100% - 60px) / 2);
-  margin-bottom: 94px;
-  // @media screen and (min-width: 768px) {
-  //   flex-basis: calc((100% - 90px) / 3);
-  //   margin-left: 30px;
-  //   margin-top: 50px;
-  // }
 
-  // @media screen and (min-width: 1200px) {
-  //   display: flex;
-  //   flex-basis: calc(100% / 4 - 30px);
-  // }
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 79px;
+  }
 }
 
 .clients__list {
@@ -51,13 +46,20 @@
   flex-basis: calc((100% - 60px) / 2);
   @include bordered($socialLinksColor);
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:nth-last-child(-n + 2) {
+    margin-bottom: 0;
+  }
   @media screen and (min-width: 768px) {
     flex-basis: calc((100% - 90px) / 3);
+    &:nth-last-child(-n + 3) {
+      margin-bottom: 0;
+    }
   }
 
   @media screen and (min-width: 1200px) {
     display: flex;
     flex-basis: calc((100% - 180px) / 6);
+    margin-bottom: 0;
 
     &:first-of-type {
       margin-left: 30px;
