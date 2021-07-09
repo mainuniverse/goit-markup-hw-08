@@ -1,7 +1,12 @@
 // /* Buttons */
 .btn-container {
   display: flex;
-  justify-content: center;
+  flex-wrap: wrap;
+  padding-top: 60px;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    justify-content: center;
+  }
 }
 
 .hero__btn {
@@ -52,5 +57,11 @@
   margin-left: 8px;
   &:first-child {
     margin-left: 0;
+  }
+  @media screen and (max-width: 768px) {
+    &:nth-child(4n) {
+      margin-left: 0;
+    }
+    margin-bottom: 15px;
   }
 }
