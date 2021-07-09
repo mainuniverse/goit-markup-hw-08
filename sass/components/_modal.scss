@@ -89,11 +89,13 @@ input {
   padding: 40px 40px 12px 40px;
 }
 .modal__form {
-  position: absolute;
-  text-align: left;
   padding-left: 40px;
   padding-right: 40px;
   width: 448px;
+  display: inline-block;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
 }
 
 .modal__field {

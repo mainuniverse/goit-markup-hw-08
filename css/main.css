@@ -1195,6 +1195,9 @@ li.social__list:first-child {
   .projects:last-child {
     margin-bottom: 30px;
   }
+  .projects:first-child {
+    height: 440px;
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -1767,11 +1770,18 @@ input {
 }
 
 .modal__form {
-  position: absolute;
-  text-align: left;
   padding-left: 40px;
   padding-right: 40px;
   width: 448px;
+  display: inline-block;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
 }
 
 .modal__field {
