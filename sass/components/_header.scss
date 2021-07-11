@@ -3,7 +3,21 @@
   text-decoration: none;
   @include bordered($borderColor1);
   align-items: center;
-  @extend %displayFlex;
+  // @extend %displayFlex;
+  display: inline-block;
+  align-items: center;
+  text-align: center;
+  @media screen and (min-width: 480px) {
+    width: 480px;
+  }
+  @media screen and (min-width: 768px) {
+    width: 768px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 1200px;
+    padding-bottom: 94px;
+  }
 }
 
 .header__nav {
