@@ -6,7 +6,7 @@
   height: 100vh;
   padding: 0;
   padding: 48px 40px;
-  background-color: #ffffff;
+  background-color: getColor('whiteColor');
   overflow: auto;
   opacity: 1;
   z-index: 2;
@@ -34,6 +34,7 @@
   right: 15px;
   @extend %displayFlex;
   box-sizing: border-box;
+
   outline: none;
   background-color: getColor('whiteColor');
   @include bordered($whiteColor);
@@ -87,8 +88,17 @@
   line-height: 1.175;
   letter-spacing: 0.02em;
   text-align: left;
-  color: red;
+
   // color: getColor('primaryTextColor');
+
+  // &:hover,
+  // &:active,
+  // &:focus {
+  //   color: getColor('accent-color');
+  // }
+}
+.menu__link {
+  color: getColor('primaryTextColor');
 
   &:hover,
   &:active,
@@ -124,6 +134,8 @@
 }
 .menu__item--data {
   margin-bottom: 32px;
+  color: getColor('primaryTextColor');
+  text-decoration: none;
 }
 
 .header__link--mail {
@@ -132,6 +144,10 @@
   line-height: 1.166;
   letter-spacing: 0.02em;
   color: getColor('secondaryTextColor');
+  &:hover,
+  &:active {
+    color: getColor('accent-color');
+  }
 }
 .menu__social {
   display: flex;
