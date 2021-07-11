@@ -665,8 +665,6 @@ p {
           align-items: center;
   margin-bottom: 30px;
   width: 480px;
-  padding-left: 15px;
-  padding-right: 15px;
 }
 
 @media screen and (min-width: 768px) {
@@ -675,6 +673,10 @@ p {
         flex-basis: calc((100% - 60px) / 2);
     margin-right: 30px;
     width: 354px;
+    text-align: start;
+  }
+  .hero__box:nth-child(2), .hero__box:first-child {
+    height: 251px;
   }
 }
 
