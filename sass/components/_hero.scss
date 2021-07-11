@@ -52,20 +52,20 @@
 .hero__container {
   display: block;
   text-align: center;
-  @media screen and (min-width: 480px) {
-    width: 480px;
-  }
+  // @media screen and (min-width: 480px) {
+  //   width: 480px;
+  // }
 
   @media screen and (min-width: 768px) {
     display: flex;
     flex-wrap: wrap;
     margin-right: -30px;
     margin-bottom: -30px;
-    width: 768px;
+    // width: 768px;
   }
   @media screen and (min-width: 1200px) {
     display: flex;
-    width: 1200px;
+    // width: 1200px;
   }
 }
 
