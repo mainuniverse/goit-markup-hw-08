@@ -567,10 +567,12 @@ p {
   margin: auto;
   border-radius: 4px;
   padding: 118px 0;
+  width: 100%;
   display: inline-block;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  text-align: center;
 }
 
 @media screen and (max-width: 767px) {
@@ -622,8 +624,17 @@ p {
 }
 
 .hero__container {
-  display: block;
+  display: inline-block;
   text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .hero__container {
+    margin-left: -15px;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -652,6 +663,10 @@ p {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin-bottom: 30px;
+  width: 480px;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 @media screen and (min-width: 768px) {
@@ -684,7 +699,6 @@ p {
   background-color: #f5f4fa;
   border-radius: 4px;
   border-color: #f5f4fa;
-  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -694,7 +708,6 @@ p {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  width: 480px;
 }
 
 .hero__img:hover, .hero__img:focus {
@@ -814,6 +827,12 @@ p {
   list-style: none;
 }
 
+@media screen and (min-width: 480px) {
+  .team__container {
+    width: 480px;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .team__container {
     width: 768px;
@@ -894,6 +913,7 @@ p {
   border-bottom-right-radius: 3px;
   width: 450px;
   margin-top: 50px;
+  margin-right: 15px;
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
@@ -975,16 +995,6 @@ li.social__list:first-child {
   }
 }
 
-.clients__container {
-  margin-bottom: 60px;
-}
-
-@media screen and (min-width: 1200px) {
-  .clients__container {
-    margin-bottom: 79px;
-  }
-}
-
 .clients__text {
   font-family: Roboto;
   font-size: 28px;
@@ -1028,7 +1038,6 @@ li.social__list:first-child {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  max-width: 100%;
   height: 92px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
@@ -1320,6 +1329,30 @@ li.social__list:first-child {
   padding-bottom: 60px;
   padding-left: -15px;
   padding-right: -15px;
+  display: inline-block;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  margin-top: 60px;
+}
+
+@media screen and (min-width: 480px) {
+  .footer {
+    width: 480px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .footer {
+    width: 768px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer {
+    width: 1200px;
+  }
 }
 
 @media screen and (max-width: 767px) {

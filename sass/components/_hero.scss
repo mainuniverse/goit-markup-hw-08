@@ -10,9 +10,10 @@
   margin: auto;
   border-radius: 4px;
   padding: 118px 0;
-  // width: 100%;
+  width: 100%;
   display: inline-block;
   align-items: center;
+  text-align: center;
   @media screen and (max-width: 767px) {
     width: 480px;
   }
@@ -50,11 +51,13 @@
   }
 }
 .hero__container {
-  display: block;
+  display: inline-block;
   text-align: center;
-  // @media screen and (min-width: 480px) {
-  //   width: 480px;
-  // }
+  align-items: center;
+
+  @media screen and (min-width: 480px) and (max-width: 767px) {
+    margin-left: -15px;
+  }
 
   @media screen and (min-width: 768px) {
     display: flex;
@@ -73,6 +76,13 @@
   display: block;
   text-align: center;
   align-items: center;
+  margin-bottom: 30px;
+  width: 480px;
+  // @media screen and (max-width: 767px) {
+
+  // }
+  padding-left: 15px;
+  padding-right: 15px;
   @media screen and (min-width: 768px) {
     flex-basis: calc((100% - 60px) / 2);
     margin-right: 30px;
@@ -92,11 +102,9 @@
   background-color: getColor('otherBackgroundColor');
   border-radius: 4px;
   border-color: rgba(245, 244, 250, 1);
-  width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 480px;
 
   &:hover,
   &:focus {
