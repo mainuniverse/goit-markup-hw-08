@@ -575,7 +575,7 @@ p {
 
 @media screen and (max-width: 767px) {
   .hero {
-    max-width: 480px;
+    width: 480px;
   }
 }
 
@@ -694,6 +694,7 @@ p {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  width: 480px;
 }
 
 .hero__img:hover, .hero__img:focus {
