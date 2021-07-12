@@ -1069,7 +1069,6 @@ li.social__list:first-child {
 @media screen and (min-width: 1200px) {
   .clients__container {
     width: 1200px;
-    padding-top: 94px;
   }
 }
 
@@ -1090,7 +1089,6 @@ li.social__list:first-child {
     font-weight: 700;
     line-height: 1.167;
     margin-top: 94px;
-    margin-bottom: 50px;
   }
 }
 
