@@ -793,13 +793,14 @@ p {
 }
 
 .about__container {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  display: none;
 }
 
-@media (max-width: 1199px) {
+@media (min-width: 1200px) {
   .about__container {
-    display: none;
+    display: inline;
+    padding-top: 94px;
+    padding-bottom: 94px;
   }
 }
 
@@ -1370,7 +1371,6 @@ li.social__list:first-child {
   .project__example:first-child {
     display: inline-block;
     margin-bottom: 50px;
-    background-color: red;
   }
 }
 

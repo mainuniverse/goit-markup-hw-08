@@ -1,8 +1,9 @@
 .about__container {
-  padding-top: 94px;
-  padding-bottom: 94px;
-  @media (max-width: 1199px) {
-    display: none;
+  display: none;
+  @media (min-width: 1200px) {
+    display: inline;
+    padding-top: 94px;
+    padding-bottom: 94px;
   }
 }
 
