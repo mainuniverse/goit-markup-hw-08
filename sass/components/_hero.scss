@@ -78,7 +78,9 @@
   @media screen and (min-width: 768px) {
     display: flex;
     flex-wrap: wrap;
+    margin-right: -30px;
     margin-bottom: -30px;
+    align-items: center;
     // width: 768px;
   }
   @media screen and (min-width: 1200px) {

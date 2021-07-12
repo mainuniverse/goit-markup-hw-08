@@ -6,14 +6,17 @@
   height: auto;
   padding-bottom: 60px;
   margin-top: 50px;
+  // width: 480px;
   @media screen and (min-width: 768px) {
     display: flex;
     flex-wrap: wrap;
     margin-right: -30px;
     margin-bottom: -30px;
+    // width: 768;
   }
 
   @media screen and (min-width: 1200px) {
+    width: 1200px;
     padding-bottom: 94px;
   }
 }
